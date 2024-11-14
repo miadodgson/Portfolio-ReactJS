@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './CustomButton.css';
 
+
 const CustomButton = ({ label, onClick, style }) => {
   return (
     <button className="custom-button" onClick={onClick} style={style}>
