@@ -1,0 +1,44 @@
+.App{
+    text-align: center
+}
+
+.App-header {
+    background-color: #282c34
+}
+
+/* table container */
+.left-sidebar-tables {
+    width:100%;
+    border:0;
+    border-collapse:collapse;
+}
+
+/* table cells */
+.left-sidebar-tables .header {
+    padding:16px;
+    background:aliceblue;
+	text-align: center;
+	font-size: 35px;
+}
+
+.left-sidebar-tables .left-sidebar {
+    padding:16px;
+    width:33.33333%;
+    background:cream;
+}
+.left-sidebar-tables .main-content {
+    padding:16px;
+    width:66.66666%;
+    background:#fff;
+	text-align: center;
+}
+.left-sidebar-tables .footer {
+    padding:16px;
+    background:aliceblue;
+	text-align: center;
+}
+
+.h1 {
+	text-align: center;
+	font-size: 16px;
+	}
