@@ -1,5 +1,5 @@
 import React from 'react'
-import './AboutMe.css'
+import './App.css'
 
 
 const AboutMe = ({style}
@@ -7,7 +7,7 @@ const AboutMe = ({style}
 
 return (
 	<div>
-		<h1 className="about-me" style={style}> About Me
+		<h1 className="title" style={style}> About Me
 		</h1>
 	</div>
 	)

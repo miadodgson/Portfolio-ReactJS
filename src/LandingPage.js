@@ -1,6 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import Image from './Image.js'
+import Title from './Title.js'
 import CustomButton from './CustomButton'
 import AboutMe from './AboutMe'
 import './Line.css'
@@ -20,7 +20,7 @@ const LandingPage = () => {
           <tr>
             <td className="left-sidebar">
               <Image />
-              Biochemistry Researcher
+			  <Title />
               <h1 style={{ display: 'flex', justifyContent: 'center', fontSize: '20px', alignItems: 'center', height: '1vh' }}>
                 Email Me
               </h1>

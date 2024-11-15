@@ -6,6 +6,22 @@
     background-color: #282c34
 }
 
+.title {
+	font-size:15px;
+	font-family: sans-serif;
+	font-weight: 100;
+	text-align: center;
+	border-bottom: 5px black;
+}
+
+.about-me {
+	font-size:20px;
+	font-family: sans-serif;
+	font-weight: 100;
+	text-align: right;
+	border-bottom: 5px black;
+}
+
 /* table container */
 .left-sidebar-tables {
     width:100%;
