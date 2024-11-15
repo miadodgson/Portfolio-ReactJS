@@ -1,9 +1,11 @@
 hr {
     border: 0;
-    height: 2px;
+    height: 1px;
 	width:75%;
 	background: linear-gradient(to right, aliceblue, blue);
-    margin: 20px 0;
+	margin-right:-2px;
+	margin-left:20px;
+    margin: 20px 10;
 	align-content: center;
 	flex: flex;
 }

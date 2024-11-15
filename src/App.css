@@ -5,9 +5,10 @@
 .header {
     background-color:aliceblue;
 	width:100%;
+	padding:0px;
 	font-size:25px;
 	font-weight: 100;
-	font-family:sans-serf;
+	font-family:sans-serif;
 	text-align: center;
 }
 
@@ -43,7 +44,8 @@
 
 /* table cells */
 .left-sidebar-tables .header {
-    padding:16px;
+    padding:0px;
+	font-family:sans-serif;
     background:aliceblue;
 	text-align: center;
 	font-size: 35px;

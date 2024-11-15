@@ -12,7 +12,7 @@ const LandingPage = () => {
 
   return (
     <div>
-	  <Header/>
+	  <Header />
       <table className="left-sidebar-tables">
         <tbody>
           <tr>
