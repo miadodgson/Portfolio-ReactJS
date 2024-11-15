@@ -1,46 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './App.css'
-import Image from './Image.js'
-import CustomButton from './CustomButton'
-import AboutMe from './AboutMe'
-import './Line.css'
+import LandingPage from './LandingPage.js'
 
-const App = () => {
-  const handleClick = () => {
-    alert('Button clicked!');
-  };
-
+function App() { 
   return (
     <div>
-      <table className="left-sidebar-tables">
-        <tbody>
-          <tr>
-			<td colSpan="2" className="header">Maria Dodgson
-			</td>
-          </tr>
-          <tr>
-            <td className="left-sidebar">
-			  <Image/>
-	              Biochemistry Researcher
-              <h1 style={{display: 'flex',  justifyContent:'center', fontSize:'20px',alignItems:'center', height: '1vh'}}>
-	            Email Me
-	          </h1>
-              <CustomButton label="mddodgson@mun.ca" onClick={handleClick}/>
-            </td>
-            <td className="main-content">
-				<AboutMe>
-				</AboutMe>
-				<hr/>
-			</td>
-          </tr>
-          <tr>
-            <td colSpan="2" className="footer"></td>
-          </tr>
-        </tbody>
-      </table>
+      <LandingPage />
     </div>
-  )
+  );
 }
 
 export default App
+
+ReactDOM.render(<App />, document.getElementById('root'))
