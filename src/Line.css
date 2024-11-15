@@ -1,0 +1,7 @@
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, aliceblue, blue);
+    margin: 20px 0;
+	align-content: right;
+}

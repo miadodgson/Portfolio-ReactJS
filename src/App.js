@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import './App.css'
 import Image from './Image.js'
 import CustomButton from './CustomButton'
+import AboutMe from './AboutMe'
+import './Line.css'
 
 const App = () => {
   const handleClick = () => {
@@ -14,26 +16,31 @@ const App = () => {
       <table className="left-sidebar-tables">
         <tbody>
           <tr>
-            <td colSpan="2" className="header">Maria Dodgson</td>
+			<td colSpan="2" className="header">Maria Dodgson
+			</td>
           </tr>
           <tr>
             <td className="left-sidebar">
 			  <Image/>
-              Biochemistry Researcher
+	              Biochemistry Researcher
               <h1 style={{display: 'flex',  justifyContent:'center', fontSize:'20px',alignItems:'center', height: '1vh'}}>
 	            Email Me
 	          </h1>
               <CustomButton label="mddodgson@mun.ca" onClick={handleClick}/>
             </td>
-            <td className="main-content">Main content</td>
+            <td className="main-content">
+				<AboutMe>
+				</AboutMe>
+				<hr/>
+			</td>
           </tr>
           <tr>
-            <td colSpan="2" className="footer">Footer</td>
+            <td colSpan="2" className="footer"></td>
           </tr>
         </tbody>
       </table>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
