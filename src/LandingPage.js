@@ -4,7 +4,6 @@ import Image from './Image.js'
 import Title from './Title.js'
 import CustomButton from './CustomButton'
 import AboutMe from './AboutMe'
-import './Line.css'
 
 const LandingPage = () => {
   const handleClick = () => {
@@ -28,7 +27,6 @@ const LandingPage = () => {
             </td>
             <td className="main-content">
               <AboutMe />
-              <hr />
             </td>
           </tr>
           <tr>
