@@ -16,10 +16,6 @@ const LandingPage = () => {
       <table className="left-sidebar-tables">
         <tbody>
           <tr>
-            <td>
-			</td>
-          </tr>
-          <tr>
             <td className="left-sidebar">
               <Image />
 			  <Title />
