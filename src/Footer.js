@@ -1,14 +1,14 @@
 import React from 'react'
 import './App.css'
 
-const Header = () => {
+const Footer = () => {
 
 return (
 	<div>
-		<h1 className="header"> Maria Dodgson
+		<h1 className="footer"> footer
 		</h1>
 	</div>
 	)
 }
 
-export default Header
+export default Footer

@@ -1,37 +1,23 @@
 import React from 'react'
 import Header from './Header.js'
-import Image from './Image.js'
-import Title from './Title.js'
-import CustomButton from './CustomButton'
-import AboutMe from './AboutMe'
+import LeftContent from './LeftContent.js'
+import RightContent from './RightContent.js'
+import Footer from './Footer.js'
+import './App.css'
+
 
 const LandingPage = () => {
-  const handleClick = () => {
-    alert('Button clicked!');
-  };
 
   return (
     <div>
 	  <Header />
-      <table className="left-sidebar-tables">
-        <tbody>
-          <tr>
-            <td className="left-sidebar">
-              <Image />
-			  <Title />
-              <CustomButton label="mddodgson@mun.ca" onClick={handleClick} />
-            </td>
-            <td className="main-content">
-              <AboutMe />
-            </td>
-          </tr>
-          <tr>
-            <td colSpan="2" className="footer"></td>
-          </tr>
-        </tbody>
-      </table>
+	  <div className='content-container'>
+		  <LeftContent />
+		  <RightContent />
+	  </div> 
+	  <Footer />
     </div>
-  );
-};
+  )
+}
 
 export default LandingPage
