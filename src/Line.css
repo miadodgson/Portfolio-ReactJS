@@ -2,10 +2,11 @@ hr {
     border: 0;
     height: 1px;
 	width:75%;
-	background: linear-gradient(to right, aliceblue, blue);
+	background: linear-gradient(to right, grey, black);
 	margin-right:-2px;
 	margin-left:20px;
     margin: 20px 10;
 	align-content: center;
 	flex: flex;
+	line-height:0%;
 }
