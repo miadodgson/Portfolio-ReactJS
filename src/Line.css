@@ -2,7 +2,7 @@ hr {
     border: 0;
     height: 1px;
 	width:75%;
-	background: linear-gradient(to right, grey, black);
+	background: linear-gradient(to right, grey, white);
 	margin-right:-2px;
 	margin-left:20px;
     margin: 20px 10;

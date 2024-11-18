@@ -1,7 +1,7 @@
-/* src/CustomButton.css */
 .custom-button {
-  background-color: white;
-  color: blue;
+background: rgb(139,214,227);
+background: linear-gradient(0deg, rgba(139,214,227,1) 0%, rgba(190,230,237,1) 100%);
+  color: white;
   display: flex;
   border: none;
   padding: 10px 20px;

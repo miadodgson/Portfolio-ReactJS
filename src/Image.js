@@ -1,6 +1,7 @@
 import React from 'react';
-import img from './IMG_6636.jpg'
+//import img from './IMG_6636.jpg'
 import './Image.css'
+import img from './MyImage.png'
 
 function Image() {
 
