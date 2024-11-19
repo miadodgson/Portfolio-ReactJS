@@ -6,7 +6,7 @@ import './CustomButton.css';
 
 const CustomButton = ({ label, onClick, style }) => {
   return (
-    <button className="custom-button" onClick={onClick} style={style}>
+    <button className="custom-button" onClick={onClick} style={style} >
       {label}
     </button>
   );
