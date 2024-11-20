@@ -1,18 +1,25 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './App.css'
-import LandingPage from './LandingPage.js'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './App.css';
+import './styles.css';
+import Header from './Header.js'
+import Body from './Body.js'
+import Footer from './Footer.js'
+import { BrowserRouter as Router } from 'react-router-dom';
 
-function App() { 
+function App() {
   return (
-    <div>
-      <LandingPage />
-    </div>
+	  <div className="app">
+	  <Router>
+	  <Header/>
+	  <Body/>
+	  </Router>
+	<Footer/>
+	  </div>
   );
 }
 
-export default App
-
+export default App;
 
 ReactDOM.render(
   <React.StrictMode>

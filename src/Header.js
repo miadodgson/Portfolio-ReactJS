@@ -5,11 +5,10 @@ import img from './BiochemistryLogo.png'
 
 const Header = () => {
 
-console.log(img)
-
 return (
 	<div>
 		<h1 className="header">
+		<img src={img}  alt="biochemistry-logo" />
         <Nav/>
 		</h1>
 	</div>
