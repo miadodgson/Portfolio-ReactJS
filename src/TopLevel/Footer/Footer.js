@@ -1,11 +1,12 @@
 import React from 'react'
-import '../App/App.css'
+import './Footer.css'
 
 const Footer = () => {
 
 return (
 	<div>
 		<h1 className="footer"> 
+			Created with React
 		</h1>
 	</div>
 	)
