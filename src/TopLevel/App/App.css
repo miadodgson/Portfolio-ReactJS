@@ -1,8 +1,16 @@
 .App{
     text-align: center;
-	background-color:black;
-	background: black;
-	
+}
+
+.background{
+	display:flex;
+	justify-content: flex;
+	background-size:contain;
+    background-position:top;
+    background: cover;
+	width: flex;
+    height: flex;
+	z-index:0;
 }
 
 .content-container {
@@ -18,7 +26,6 @@
 	justify-content: center;
 	align-items: center;
 	padding: 0px;
-	background-color:black;
 	line-height:5px;
 	margin:0px;
 }
@@ -36,7 +43,6 @@
   flex: 1;
   justify-content: center;
   align-items: center;
-  background-color:black;
 	width:100%;
 }
 
@@ -47,7 +53,6 @@
 }
 
 .header {
-    background-color:black;
 	color:white;
 	width:flex;
 	height:60px;
@@ -104,7 +109,6 @@ hr {
 .h1 {
 	text-align: center;
 	color:white;
-	background-color: black;
 	font-size: 18px;
 	position:relative;
 	margin:0px;
@@ -113,7 +117,6 @@ hr {
 .h2 {
 	text-align: center;
 	color:#A8A8A8;
-	background-color: black;
 	font-size: 12px;
 	position:relative;
 	margin:0px;

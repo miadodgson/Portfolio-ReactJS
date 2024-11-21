@@ -3,7 +3,6 @@ import '../App/App.css'
 import Contact from '../../Routes/Contact/Contact.js'
 import LandingPage from '../../Routes/LandingPage/LandingPage.js'
 
-
 const Body = () => {
     return (
         <div>
