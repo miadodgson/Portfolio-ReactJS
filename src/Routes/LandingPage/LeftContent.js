@@ -1,8 +1,7 @@
 import React from 'react'
 import '../../TopLevel/App/App.css'
-import Image from '../../Image.js'
-import '../../Image.css'
-import Title from '../../Title.js'
+import Image from '../../Assets/Images/Image.js'
+import '../../Assets/Images/Image.css'
 import CustomButton from '../../CustomButton'
 
 const LeftContent = () => {
@@ -14,9 +13,9 @@ const handleClick = () => {
 return (
 	<div className="left-content">
 		<Image />
-		<Title />
-	<CustomButton label="Email Me" onClick={handleClick} />
-	<a href='mailto:mddodgson@mun.ca'>mddodgson@mun.ca</a>
+		<h1 className="title" > Biochemistry Researcher
+		</h1>
+		<CustomButton label="Email Me" onClick={handleClick} />
 	</div>
 	)
 }

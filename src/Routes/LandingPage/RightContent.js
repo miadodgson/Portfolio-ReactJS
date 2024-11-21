@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../TopLevel/App/App.css'
-import AboutMe from '../AboutMe'
+import AboutMe from '../AboutMe/AboutMe'
 
 const RightContent = () => {
 

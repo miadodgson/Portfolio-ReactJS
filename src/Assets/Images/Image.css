@@ -1,0 +1,18 @@
+.image {
+	display:flex;
+	position:flex;
+	padding: 0px;
+	margin: 0;
+	flex-direction: column;
+	z-index:1;
+	
+	}
+
+@media (max-height: 100px) {
+  .image {
+    float: none;
+    display: flex;
+    width: 100vh;
+    height: 100vw;
+  }
+}

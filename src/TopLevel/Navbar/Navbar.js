@@ -1,6 +1,6 @@
 import '../Navbar/Navbar.css';
 import React, { useState, useRef } from 'react';
-import { ReactComponent as ArrowIcon } from '../../Arrow.svg';
+import { ReactComponent as ArrowIcon } from '../../Assets/Images/Arrow.svg';
 import {Link} from "react-router-dom";
 
 

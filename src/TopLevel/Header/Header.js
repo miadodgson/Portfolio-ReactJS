@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App/App.css'
 import Nav from '../Navbar/Navbar'
-import img from '../../BiochemistryLogo.png'
+import img from '../../Assets/Images/BiochemistryLogo.png'
 
 const Header = () => {
 

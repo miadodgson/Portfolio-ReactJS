@@ -1,6 +1,5 @@
 import React from 'react'
-import '../TopLevel/App/App.css'
-import '../Line.css'
+import './AboutMe.css'
 
 const AboutMe = (
 	)=> {
