@@ -1,14 +1,14 @@
 import '../Navbar/Navbar.css';
 import React, { useState, useRef } from 'react';
-import { ReactComponent as ArrowIcon } from '../../Assets/Images/Arrow.svg';
+import NavIcon from '../../Assets/Images/NavIcon.png';
 import {Link} from "react-router-dom";
 
 
 function Nav() {
   return (
     <Navbar>
-      <NavItem icon={<ArrowIcon />}>
-		<DropdownMenu> </DropdownMenu>
+      <NavItem icon={<img src={NavIcon} className='nav-button' alt="Nav Icon" />}>
+		  <DropdownMenu> </DropdownMenu>
       </NavItem>
     </Navbar>
   )
@@ -27,7 +27,7 @@ function NavItem(props) {
 
   return (
     <li className="nav-item">
-      <a className="icon-button" onClick={() => setOpen(!open)}>
+      <a className="nav-button" onClick={() => setOpen(!open)}>
         {props.icon}
       </a>
       {open && props.children}
@@ -36,7 +36,6 @@ function NavItem(props) {
 }
 
 function DropdownMenu() {
-  const [menuHeight] = useState(null);
   const dropdownRef = useRef(null);
 
 
@@ -54,10 +53,11 @@ function DropdownMenu() {
   }
 
   return (
-    <div className="dropdown" style={{ height: menuHeight }} ref={dropdownRef}>
+    <div className="dropdown" ref={dropdownRef}>
         <div className="menu">
 			<DropdownItem 
-				leftIcon=<ArrowIcon />
+				leftIcon=
+					{<img src={NavIcon} alt="Home Icon" />}
 				route='/'
 				routeName='Home'/>
 
