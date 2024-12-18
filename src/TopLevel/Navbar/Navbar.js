@@ -2,6 +2,7 @@ import '../Navbar/Navbar.css';
 import React, { useState, useRef } from 'react';
 import NavIcon from '../../Assets/Images/NavIcon.png';
 import {Link} from "react-router-dom";
+import plant from '../../Assets/Images/Plant.png'
 
 
 function Nav() {
@@ -57,9 +58,24 @@ function DropdownMenu() {
         <div className="menu">
 			<DropdownItem 
 				leftIcon=
-					{<img src={NavIcon} alt="Home Icon" />}
+					{<img src={plant} className='menu-item' alt="plant" height={100}/>}
 				route='/'
 				routeName='Home'/>
+
+			<DropdownItem 
+				leftIcon='@'
+				route='/Education'
+				routeName='Education'/>
+
+			<DropdownItem 
+				leftIcon='@'
+				route='/Experience'
+				routeName='Experience'/>
+
+			<DropdownItem 
+				leftIcon='@'
+				route='/Publications'
+				routeName='Publications'/>
 
 			<DropdownItem 
 				leftIcon='@'

@@ -9,7 +9,7 @@ function Index() {
 return (
     <StrictMode>
         <Router>
-            <App />  
+            <App className='app' />  
         </Router>
     </StrictMode>
 )
