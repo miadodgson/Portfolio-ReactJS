@@ -25,4 +25,4 @@ return (
 )
 		}
 	
-export default Socials
+export default Socials;

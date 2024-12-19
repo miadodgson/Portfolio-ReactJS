@@ -3,14 +3,17 @@ import React, { useState, useRef } from 'react';
 import NavIcon from '../../Assets/Images/NavIcon.png';
 import {Link} from "react-router-dom";
 import plant from '../../Assets/Images/Plant.png'
+import Dropdown from '../../Components/Dropdown/Dropdown.js'
+import '../../Components/Dropdown/Dropdown.css'
 
 
 function Nav() {
   return (
     <Navbar>
       <NavItem icon={<img src={NavIcon} className='nav-button' alt="Nav Icon" />}>
-		  <DropdownMenu> </DropdownMenu>
-      </NavItem>
+		  <Dropdown> </Dropdown>
+		  <DropdownMenu/>
+	</NavItem>
     </Navbar>
   )
 }
