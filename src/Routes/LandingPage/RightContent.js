@@ -1,11 +1,11 @@
 import React from 'react'
-import '../../TopLevel/App/App.css'
+import styles from './LandingPage.module.css'
 import AboutMe from '../AboutMe/AboutMe'
 
 const RightContent = () => {
 
 return (
-	<div className="right-content">
+	<div className={styles.rightContent}>
 		<AboutMe />
 	</div>
 	)

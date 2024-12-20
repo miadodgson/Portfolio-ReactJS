@@ -22,20 +22,7 @@
 	border: rgb(51, 240, 76) 10px solid;
 }
 
-.job-title {
-	font-size:25px;
-	color:white;
-	font-family:sans-serif;
-	font-weight: 100;
-	text-align: center;
-	justify-content: flex;
-	border-bottom: 5px black;
-	margin: 0px 0 0 0;
-	display:flex;
-	line-height:50px;
-	padding-top:10px;
-	position: relative;
-}
+
 
 hr {
     border: 0;
@@ -60,13 +47,4 @@ hr {
 	margin:0px;
 	}
 
-.h2 {
-	text-align: center;
-	color:#A8A8A8;
-	font-size: 12px;
-	position:relative;
-	margin:0px;
-	font-family: sans-serif;
-	font-weight: 100;
-	margin-right: 10px;
-	}
+

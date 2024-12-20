@@ -1,6 +1,5 @@
-import './Dropdown.css';
+import styles from './Dropdown.module.css';
 import React from 'react';
-import NavIcon from '../../Assets/Images/NavIcon.png';
 import {Link} from "react-router-dom";
 
 
@@ -8,9 +7,9 @@ function Dropdown() {
 
 return (
 
-<div className="card">
-  <ul className="list">
-    <li className="element">
+<div className={styles.card}>
+  <ul className={styles.list}>
+    <li className={styles.element}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="25"
@@ -26,9 +25,9 @@ return (
         <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
         <path d="m15 5 4 4"></path>
       </svg>
-      <p className="label">Rename</p>
+      <p className={styles.label}>Rename</p>
     </li>
-    <li className="element">
+    <li className={styles.element}>
       <svg
         className="lucide lucide-user-round-plus"
         strokeLinejoin="round"
@@ -46,12 +45,12 @@ return (
         <path d="M19 16v6"></path>
         <path d="M22 19h-6"></path>
       </svg>
-      <p className="label">Add Member</p>
+      <p className={styles.label}>Add Member</p>
     </li>
   </ul>
-  <div className="separator"></div>
-  <ul className="list">
-    <li className="element">
+  <div className={styles.seperator}></div>
+  <ul className={styles.list}>
+    <li className={styles.element}>
       <svg
         className="lucide lucide-settings"
         strokeLinejoin="round"
@@ -67,7 +66,7 @@ return (
         <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
         <circle r="3" cy="12" cx="12"></circle>
       </svg>
-      <p className="label">Settings</p>
+      <p className={styles.label}>Settings</p>
     </li>
     <li className="element delete">
       <svg
@@ -88,12 +87,12 @@ return (
         <line y2="17" y1="11" x2="10" x1="10"></line>
         <line y2="17" y1="11" x2="14" x1="14"></line>
       </svg>
-      <p className="label">Delete</p>
+      <p className={styles.label}>Delete</p>
     </li>
   </ul>
-  <div className="separator"></div>
-  <ul className="list">
-    <li className="element">
+  <div className={styles.seperator}></div>
+  <ul className={styles.list}>
+    <li className={styles.element}>
       <svg
         className="lucide lucide-users-round"
         strokeLinejoin="round"
@@ -110,7 +109,7 @@ return (
         <circle r="5" cy="8" cx="10"></circle>
         <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"></path>
       </svg>
-      <p className="label">Team Access</p>
+      <p className={styles.label}>Team Access</p>
     </li>
   </ul>
 </div>

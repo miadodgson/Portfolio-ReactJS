@@ -1,7 +1,6 @@
 import React from 'react'
-import '../../TopLevel/App/App.css'
 import CustomButton from '../../CustomButton'
-import './LandingPage.css'
+import styles from './LandingPage.module.css'
 import img from '../../Assets/Images/MyImage.png'
 
 const LeftContent = () => {
@@ -11,9 +10,9 @@ const handleClick = () => {
   };
 
 return (
-	<div className="left-content">
-		<img src={img} alt="image" className="profile-image" />
-		<h1 className="job-title" > Biochemistry Researcher
+	<div className={styles.leftContent}>
+		<img src={img} alt="image" className={styles.profileImage}/>
+		<h1 className={styles.jobTitle} > Biochemistry Researcher
 		</h1>
 		<CustomButton label="Email Me" onClick={handleClick} />
 	</div>

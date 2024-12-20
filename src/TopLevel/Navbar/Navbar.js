@@ -4,15 +4,13 @@ import NavIcon from '../../Assets/Images/NavIcon.png';
 import {Link} from "react-router-dom";
 import plant from '../../Assets/Images/Plant.png'
 import Dropdown from '../../Components/Dropdown/Dropdown.js'
-import '../../Components/Dropdown/Dropdown.css'
 
 
 function Nav() {
   return (
     <Navbar>
       	<NavItem icon={<img src={NavIcon} className='nav-button' alt="Nav Icon" />}>
-		  <Dropdown> </Dropdown>
-		  <DropdownMenu/>
+		 <DropdownMenu/>
 		</NavItem>
     </Navbar>
   )

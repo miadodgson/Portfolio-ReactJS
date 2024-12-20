@@ -14,19 +14,83 @@
 	display: flex;
 }
 
-.biochemistryLogo{
-	justify-content: flex-center;
-	padding: 0px;
-	z-index: 20;
-	/* width: 50px; */
-	width: flex;
-	height: flex;
-	cursor: pointer;
+
+/* From Uiverse.io by Mhyar-nsi */ 
+.loader {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-top: 25px;
+	position: relative;
+	justify-content: center;
+	box-sizing: border-box;
+	
+	
+
 }
 
-@media (max-height: 80px) {
-	.biochemistry-logo {
-		width: flex;
-		height: flex;
-	}
+@keyframes loader-bubbles {
+  0% {
+    box-shadow: 0 -10px #5e41eb,
+                3px 0 #5e41eb,
+                5px 0 #5e41eb;
+  }
+
+  30% {
+    box-shadow: 3px -20px rgba(239,223,255,0),
+                5px -10px #5e41eb,
+                5px 0 #5e41eb;
+  }
+
+  60% {
+    box-shadow: 3px 0 rgba(239,223,255,0),
+                4px -20px rgba(239,223,255,0),
+                3px -10px #5e41eb;
+  }
+
+  61% {
+    box-shadow: 3px 0 #5e41eb,
+                4px -20px rgba(239,223,255,0),
+                3px -10px #3b82f6;
+  }
+
+  100% {
+    box-shadow: 0 -10px #5e41eb,
+                4px -20px rgba(239,223,255,0),
+                5px -20px rgba(239,223,255,0);
+  }
+}
+
+.loader {
+  width: 10px;
+  height: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #5e41eb;
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+}
+
+.loader:before {
+  top: -8px;
+  left: -13px;
+  width: 0;
+  height: 0;
+  border: 18px solid transparent;
+  border-bottom: 20px solid #5e41eb;
+  border-radius: 3px;
+}
+
+.loader:after {
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background: #5e41eb;
+  border-radius: 50%;
+  animation: loader-bubbles 1s linear infinite forwards;
 }
