@@ -1,8 +1,7 @@
 :root {
-  --bg-accent: #484a4d;
   --text-color: #dadce1;
   --nav-size: 60px;
-  --border: 1px solid #474a4d;
+  --border: 1px solid #e80589;
   --border-radius: 8px;
   --speed: 500ms; 
 }
@@ -25,6 +24,7 @@ a {
 	display:flex;
 	justify-content: flex-end;
 	position: relative;
+  border: #0935b8 1px solid;
 }
 
 /* <ul> */

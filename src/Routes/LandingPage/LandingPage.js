@@ -1,7 +1,7 @@
 import React from 'react'
 import LeftContent from '../../Routes/LandingPage/LeftContent.js'
 import RightContent from '../../Routes/LandingPage/RightContent.js'
-import '../../TopLevel/App/App.css'
+import './LandingPage.css'
 
 
 const LandingPage = () => {

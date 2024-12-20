@@ -1,47 +1,10 @@
 .app{
     text-align:center;
+	display:flex;
+	flex-direction: column;
 	max-width:100%;
 	max-height:100%;
-
-}
-
-.content-container {
-	display:flex;
-	flex-direction: row;
-	margin:0px;
-	max-width:100%;
-	max-height:100%;
-}
-
-.left-content {
-	display:flex;
-	flex-direction:column;
-	justify-content: center;
-	align-items: center;
-	padding: 0px;
-	line-height:5px;
-	margin:0px;
-}
-
-@media (max-width: 768px) {
-  .left-content {
-    margin-right: 0;
-    margin-bottom: 0px;
-	margin:0px;
-  }
-}
-
-.right-content {
-	display:flex;
-  justify-content: center;
-  align-items: center;
-	width:100%;
-}
-
-@media (max-width: 768px) {
-  .right-content {
-    margin-left: 0;
-  }
+	height: calc(100% - var(--bg));
 }
 
 .header {
@@ -70,17 +33,6 @@
 	display:flex;
 	line-height:30px;
 	padding-top:10px
-}
-
-.email-me {
-	font-size:20px;
-	color:white;
-	font-family: sans-serif;
-	font-weight: 500;
-	text-align: center;
-	position:relative;
-	display:flex;
-	margin: 10px;
 }
 
 hr {
@@ -116,17 +68,3 @@ hr {
 	font-weight: 100;
 	margin-right: 10px;
 	}
-
-.biochemistry-logo{
-	display:flex;
-	justify-content: flex-center;
-	padding: 0px;
-	z-index:20;
-	}
-
-@media (max-height: 80px) {
-  .biochemistry-logo {
-    width: flex;
-    height: flex;
-  }
-    }

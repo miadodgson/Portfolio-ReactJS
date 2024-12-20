@@ -1,12 +1,15 @@
 .footer{
 	color:white;
-	font-size:30px;
+	font-size:24px;
 	font-family:sans-serif;
 	font-weight: 100;
 	text-align: center;
-	border-bottom: 5px black;
+	border-bottom: 0;
 	margin: 0;
-	position:flex;
+	position:absolute;
+	bottom:0;
 	line-height:30px;
 	padding:20px;
+	width:100%;
+	box-sizing: border-box;
 }
