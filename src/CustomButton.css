@@ -1,9 +1,10 @@
 .custom-button {
-  width: 165px;
-  height: 62px;
+  width: 200px;
+  height: 75px;
   cursor: pointer;
   color: #fff;
-  font-size: 17px;
+  font-size: 30px;
+  font-family: sans-serif;
   border-radius: 1rem;
   border: none;
   position: relative;
