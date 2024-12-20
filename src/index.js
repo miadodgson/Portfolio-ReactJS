@@ -4,18 +4,10 @@ import App from './TopLevel/App/App.js'
 import { StrictMode } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-function Index() {
-	
-return (
+ReactDOM.render(
     <StrictMode>
         <Router>
-            <App className='app' />  
+            <App />  
         </Router>
-    </StrictMode>
-)
-}
-
-export default Index
-
-ReactDOM.render(<App />, document.getElementById('root'))
-
+    </StrictMode>,
+    document.getElementById('root'))

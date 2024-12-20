@@ -1,5 +1,4 @@
 .header {
-	background-color: var(--bg);
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -11,21 +10,23 @@
 	height: var(--Header-size, 80px);
 	justify-content: space-between;
 	box-sizing: border-box;
-	border: palevioletred 1px solid;
+	/* border: palevioletred 1px solid; */
+	display: flex;
 }
 
-.biochemistry-logo{
-	display:flex;
+.biochemistryLogo{
 	justify-content: flex-center;
 	padding: 0px;
-	z-index:20;
+	z-index: 20;
+	/* width: 50px; */
 	width: flex;
 	height: flex;
-	}
+	cursor: pointer;
+}
 
 @media (max-height: 80px) {
-  .biochemistry-logo {
-    width: flex;
-    height: flex;
-  }
-    }
+	.biochemistry-logo {
+		width: flex;
+		height: flex;
+	}
+}

@@ -10,10 +10,10 @@ import '../../Components/Dropdown/Dropdown.css'
 function Nav() {
   return (
     <Navbar>
-      <NavItem icon={<img src={NavIcon} className='nav-button' alt="Nav Icon" />}>
+      	<NavItem icon={<img src={NavIcon} className='nav-button' alt="Nav Icon" />}>
 		  <Dropdown> </Dropdown>
 		  <DropdownMenu/>
-	</NavItem>
+		</NavItem>
     </Navbar>
   )
 }
