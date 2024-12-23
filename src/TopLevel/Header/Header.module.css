@@ -14,7 +14,6 @@
 	display: flex;
 }
 
-
 /* From Uiverse.io by Mhyar-nsi */ 
 .loader {
   display: inline-block;
@@ -24,48 +23,46 @@
 	position: relative;
 	justify-content: center;
 	box-sizing: border-box;
-	
-	
-
+	margin-top:30px;
 }
 
 @keyframes loader-bubbles {
   0% {
-    box-shadow: 0 -10px #5e41eb,
-                3px 0 #5e41eb,
-                5px 0 #5e41eb;
+    box-shadow: 0 -15px #5e41eb,
+                4.5px 0 #5e41eb,
+                7.5px 0 #5e41eb;
   }
 
   30% {
-    box-shadow: 3px -20px rgba(239,223,255,0),
-                5px -10px #5e41eb,
-                5px 0 #5e41eb;
+    box-shadow: 4.5px -30px rgba(239,223,255,0),
+                7.5px -15px #5e41eb,
+                7.5px 0 #5e41eb;
   }
 
   60% {
-    box-shadow: 3px 0 rgba(239,223,255,0),
-                4px -20px rgba(239,223,255,0),
-                3px -10px #5e41eb;
+    box-shadow: 4.5px 0 rgba(239,223,255,0),
+                6px -30px rgba(239,223,255,0),
+                4.5px -15px #5e41eb;
   }
 
   61% {
-    box-shadow: 3px 0 #5e41eb,
-                4px -20px rgba(239,223,255,0),
-                3px -10px #3b82f6;
+    box-shadow: 4.5px 0 #5e41eb,
+                6px -30px rgba(239,223,255,0),
+                4.5px -15px #3b82f6;
   }
 
   100% {
-    box-shadow: 0 -10px #5e41eb,
-                4px -20px rgba(239,223,255,0),
-                5px -20px rgba(239,223,255,0);
+    box-shadow: 0 -15px #5e41eb,
+                6px -30px rgba(239,223,255,0),
+                7.5px -30px rgba(239,223,255,0);
   }
 }
 
 .loader {
-  width: 10px;
-  height: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 15px; /* 50% bigger */
+  height: 30px; /* 50% bigger */
+  margin-left: 30px; /* 50% bigger */
+  margin-right: 30px; /* 50% bigger */
   background: #5e41eb;
 }
 
@@ -76,20 +73,20 @@
 }
 
 .loader:before {
-  top: -8px;
-  left: -13px;
+  top: -12px; /* 50% bigger */
+  left: -19.5px; /* 50% bigger */
   width: 0;
   height: 0;
-  border: 18px solid transparent;
-  border-bottom: 20px solid #5e41eb;
-  border-radius: 3px;
+  border: 27px solid transparent; /* 50% bigger */
+  border-bottom: 30px solid #5e41eb; /* 50% bigger */
+  border-radius: 4.5px; /* 50% bigger */
 }
 
 .loader:after {
   top: 0;
   left: 0;
-  width: 4px;
-  height: 4px;
+  width: 6px; /* 50% bigger */
+  height: 6px; /* 50% bigger */
   background: #5e41eb;
   border-radius: 50%;
   animation: loader-bubbles 1s linear infinite forwards;

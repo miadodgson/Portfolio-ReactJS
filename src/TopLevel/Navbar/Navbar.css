@@ -19,6 +19,7 @@ a {
 
 .navbar {
   height: var(--Header-size);
+	width: 40%;
   background-color: var(--bg);
   padding: 0;
 	display:flex;
@@ -53,6 +54,9 @@ a {
   align-items: center;
   justify-content: center;
   transition: filter 300ms;
+	height: var(--nav-size);
+	width: 50px;
+	margin-right:10px;
 }
 
 .icon-button {
