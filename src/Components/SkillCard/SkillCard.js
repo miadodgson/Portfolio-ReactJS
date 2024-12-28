@@ -22,7 +22,7 @@ const SkillCard = () => {
           <div className={styles.skillPercentNumber}>80%</div>
         </div>
         <div className={styles.skills}>
-          <div className={styles.skillName}>Quantitative PCR</div>
+          <div className={styles.skillName}>qPCR</div>
           <div className={styles.skillLevel}>
             <div style={{ width: '75%' }} className={styles.skillPercent}></div>
           </div>

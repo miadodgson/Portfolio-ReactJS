@@ -26,6 +26,8 @@
     margin-right: 0;
     margin-bottom: 0px;
 	margin:0px;
+	flex-direction: column;
+	  max-width: 768px;
   }
 }
 
@@ -45,11 +47,12 @@
 @media (max-width: 768px) {
   .rightContent {
     margin-left: 0;
+	flex-direction: column;
+	  max-width: 768px;
   }
 }
 
 .profileImage {
-	border: plum 10px solid;
 	width: 100%;
 	height: 100%; 
 	border-radius: 50%; /* make the image circular */
@@ -80,6 +83,8 @@
  @media (max-width: 768px) {
      .leftContent, .rightContent {
         flex: 1 1 100%;
+		 flex-direction: column;
+		 max-width: 768px;
          }
 }
 
@@ -91,7 +96,7 @@
 	text-align: center;
 	justify-content: flex;
 	border-bottom: 5px black;
-	margin: 0px 0 0 0;
+	margin: 0px 0 10 0;
 	display:flex; 
 	line-height:30px;
 	padding-top:10px;
@@ -99,4 +104,45 @@
 }
 
 
+.h1 {
+	font-size:35px;
+	color:white;
+	font-family: sans-serif;
+	font-weight: 100;
+	text-align:center;
+	flex: 1;
+	padding-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	line-height:10px;
+}
 
+.h2 {
+	text-align: center;
+	color:#A8A8A8;
+	font-size: 25px;
+	position:relative;
+	margin:0px;
+	font-family: sans-serif;
+	font-weight: 100;
+	margin-right: 10px;
+	}
+
+.gradientLine {
+	display: flex;
+	margin: 0 auto;
+	position: flex;
+	height: 1px;
+	line-height: 10px;
+	width: 80%;
+	background-image: radial-gradient(transparent,#006aff,indigo,purple);
+		right: 50%;
+		left: 50%;
+		translate: -50% - 50%;
+		z-index: -1;
+	border-radius: 10px;
+	  box-shadow: 0px 1px 2px rgba(0,255,255,0.9), 
+              0px 2px 4px rgba(104, 0, 255, 0.9),
+              0px 4px 8px rgba(0,255,255,0.6), 
+              0px 8px 16px rgba(0,255,255,0.5);
+	}

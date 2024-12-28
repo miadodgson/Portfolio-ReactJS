@@ -1,5 +1,5 @@
 import React from 'react'
-import './Experience.css'
+import styles from './Experience.module.css'
 import SkillCard from '../../Components/SkillCard/SkillCard.js'
 
 const Experience = () => {
@@ -7,7 +7,9 @@ const Experience = () => {
 
 return (
 	<div>
-		<h1 className='h1'> Experience </h1>
+		<h1 className={styles.h1}> Experience </h1>
+		<h2 className={styles.gradientLine}/>
+		<br/>
 		<SkillCard />
 	</div>
 	)
