@@ -1,7 +1,7 @@
-import '../Navbar/Navbar.css';
-import React, { useState, useRef } from 'react';
-import NavIcon from '../../Assets/Images/NavIcon.png';
-import {Link} from "react-router-dom";
+import styles from '../Navbar/Navbar.module.css'
+import React, { useState, useRef } from 'react'
+import NavIcon from '../../Assets/Images/NavIcon.png'
+import {Link} from "react-router-dom"
 import plant from '../../Assets/Images/Plant.png'
 import Dropdown from '../../Components/Dropdown/Dropdown.js'
 
@@ -9,7 +9,7 @@ import Dropdown from '../../Components/Dropdown/Dropdown.js'
 function Nav() {
   return (
     <Navbar>
-      	<NavItem icon={<img src={NavIcon} className='nav-button' alt="Nav Icon" />}>
+      	<NavItem icon={<img src={NavIcon} className={styles.navButton} alt="Nav Icon" />}>
 		 <DropdownMenu/>
 		</NavItem>
     </Navbar>
@@ -18,8 +18,8 @@ function Nav() {
 
 function Navbar(props) {
   return (
-    <nav className="navbar">
-      <ul className="navbar-nav">{props.children}</ul>
+    <nav className={styles.navbar}>
+      <ul className={styles.navbarNav}>{props.children}</ul>
     </nav>
   )
 }
@@ -28,8 +28,8 @@ function NavItem(props) {
   const [open, setOpen] = useState(false);
 
   return (
-    <li className="nav-item">
-      <a className="nav-button" onClick={() => setOpen(!open)}>
+    <li className={styles.navItem}>
+      <a className={styles.navButton} onClick={() => setOpen(!open)}>
         {props.icon}
       </a>
       {open && props.children}
@@ -45,41 +45,40 @@ function DropdownMenu() {
     return (
       <Link
 		  to={route}
-		className="menu-item">
-        <span className="icon-button">{leftIcon}
+		className={styles.menuItem}>
+        <span className={styles.iconButton}>{leftIcon}
 		</span>
-		<span className="route-name">{routeName}
+		<span className={styles.routeName}>{routeName}
 		</span>
 	</Link>
     )
   }
 
   return (
-    <div className="dropdown" ref={dropdownRef}>
-        <div className="menu">
+    <div className={styles.dropdown} ref={dropdownRef}>
+        <div className={styles.menu}>
 			<DropdownItem 
-				leftIcon=
-					{<img src={plant} className='menu-item' alt="plant" height={100}/>}
+				leftIcon='🏠'
 				route='/'
 				routeName='Home'/>
 
 			<DropdownItem 
-				leftIcon='@'
+				leftIcon='🎓'
 				route='/Education'
 				routeName='Education'/>
 
 			<DropdownItem 
-				leftIcon='@'
+				leftIcon='📚'
 				route='/Experience'
 				routeName='Experience'/>
 
 			<DropdownItem 
-				leftIcon='@'
+				leftIcon='📊'
 				route='/Publications'
 				routeName='Publications'/>
 
 			<DropdownItem 
-				leftIcon='@'
+				leftIcon='✉️'
 				route='/Contact'
 				routeName='Contact'/>
 				

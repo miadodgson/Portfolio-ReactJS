@@ -1,14 +1,15 @@
-import React from 'react'
-import './Publications.css'
+import React from 'react';
+import styles from './Publications.module.css';
+import GradientLine from '../../Components/GradientLine/GradientLine.js';
 
 const Publications = () => {
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.h1}>Publications</h1>
+      <GradientLine />
+      <p className={styles.p}>CSDE1</p>
+    </div>
+  );
+};
 
-
-return (
-	<div>
-		<h1 className='h1'> mddodgson@mun.ca </h1>
-	</div>
-	)
-}
-
-export default Publications
+export default Publications;

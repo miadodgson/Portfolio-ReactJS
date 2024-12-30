@@ -1,21 +1,13 @@
 import React from 'react'
-import './Contact.css'
-import img from '../../Assets/ProfileImage.png'
-import Socials from '../../Components/Socials/Socials.jsx'
+import styles from './Contact.module.css'
+import ContactCard from '../../Components/ContactCard/ContactCard.js'
 
 const Contact = () => {
 
 
 return (
-	<div>
-		<img src={img} alt="image" height={250}/>
-		<h1 className='h1'> Maria Dodgson 
-		</h1>
-		<h1 className='h1'> mddodgson@mun.ca 
-		</h1>
-		<h1 className='h1'> +1 709-687-7779
-		</h1>
-		<Socials/>
+	<div className={styles.contact}>
+		<ContactCard/>
 	</div>
 	)
 }

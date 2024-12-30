@@ -1,7 +1,6 @@
 /* From Uiverse.io by ahmed150up2 */ 
 .card {
   display: flex;
-	position: center;
 	justify-content: center;
   height: 70px;
   width: 270px;
@@ -51,11 +50,6 @@
 }
 
 .card .socialLink3:hover {
-  background-color: #0059f7;
-  animation: bounce_613 0.4s linear;
-}
-
-.card .socialLink4:hover {
   background-color: #1d4292;
   animation: bounce_613 0.4s linear;
 }

@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './Education.module.css';
+import GradientLine from '../../Components/GradientLine/GradientLine.js'
 import CardComponent from '../../Components/Cards/Cards.tsx'
 
 const Education = () => {
   return (
     <div>
       <h1 className={styles.h1}>Education</h1>
-	  <h2 className={styles.gradientLine}/>
+	  <GradientLine/>
 	  <br/>
 	  <CardComponent/>
 	  

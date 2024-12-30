@@ -12,7 +12,7 @@ const SkillCard = () => {
           <div className={styles.skillLevel}>
             <div style={{ width: '90%' }} className={styles.skillPercent}></div>
           </div>
-          <div className={styles.skillPercentLevel}>90%</div>
+          <div className={styles.skillPercentNumber}>90%</div>
         </div>
         <div className={styles.skill}>
           <div className={styles.skillName}>Western Blot</div>
@@ -21,14 +21,14 @@ const SkillCard = () => {
           </div>
           <div className={styles.skillPercentNumber}>80%</div>
         </div>
-        <div className={styles.skills}>
+        <div className={styles.skill}>
           <div className={styles.skillName}>qPCR</div>
           <div className={styles.skillLevel}>
             <div style={{ width: '75%' }} className={styles.skillPercent}></div>
           </div>
           <div className={styles.skillPercentNumber}>75%</div>
         </div>
-      </div>
+	</div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomButton from '../../CustomButton'
+import CustomButton from '../../Components//CustomButton/CustomButton.js'
 import styles from './LandingPage.module.css'
 import img from '../../Assets/Images/MyImage.png'
 

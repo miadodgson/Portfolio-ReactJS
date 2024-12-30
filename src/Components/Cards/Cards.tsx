@@ -5,16 +5,11 @@ const CardComponent = () => {
 
 
 return(
-
-
 /* From Uiverse.io by MuhammadHasann */ 
 <div class={styles.card}>
   <div class={styles.card__border}></div>
   <div class={styles.card_title__container}>
-    <span class={styles.card_title}>Explosive Growth</span>
-    <p class={styles.card_paragraph}>
-      Perfect for your next content, leave to us and enjoy the result!
-    </p>
+    <span class={styles.card_title}>Molecular Biology</span>
   </div>
   <hr class={styles.line} />
   <ul class={styles.card__list}>
@@ -104,7 +99,7 @@ return(
       <span class={styles.list_text}>2 Hours Marketing Consultation</span>
     </li>
   </ul>
-  <button class={styles.button}>Book a Call</button>
+  <button class={styles.button}>Contact Me</button>
 </div>
 )
 }
