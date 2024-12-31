@@ -111,12 +111,12 @@ a {
 	font-size:20px;
 }
 
-.menuItem .icon-button {
+.menuItem .iconButton {
   margin-right: 0.5rem;
 }
 
 
-.menuItem .icon-button:hover {
+.menuItem .iconButton:hover {
   filter: none;
 }
 

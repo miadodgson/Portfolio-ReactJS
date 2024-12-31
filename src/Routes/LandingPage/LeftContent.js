@@ -11,10 +11,10 @@ const handleClick = () => {
 
 return (
 	<div className={styles.leftContent}>
-		<img src={img} alt="image" className={styles.profileImage}/>
+		<img src={img} alt="Profile Homepage" className={styles.profileImage}/>
 		<h1 className={styles.jobTitle} > Biochemistry Researcher
 		</h1>
-		<CustomButton label="Email Me" onClick={handleClick} />
+		<CustomButton label="Contact Me" onClick={handleClick} />
 	</div>
 	)
 }

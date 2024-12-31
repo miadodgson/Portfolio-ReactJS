@@ -38,7 +38,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to right, transparent, indigo, transparent);
+  background: linear-gradient(to right, transparent, #7B68EE, transparent);
   height: 1px;
   width: 100%;
 }
@@ -48,7 +48,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to right, transparent, purple, transparent);
+  background: linear-gradient(to right, transparent, #7B68EE, transparent);
   height: 5px;
   width: 50%;
   filter: blur(4px);
@@ -59,7 +59,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to right, transparent, indigo, transparent);
+  background: linear-gradient(to right, transparent, #7B68EE, transparent);
   height: 1px;
   width: 50%;
 }
@@ -88,7 +88,7 @@
   content: '';
   height: 75%;
   width: 100%;
-  background: linear-gradient(to right, black, purple);
+  background: linear-gradient(to right, black, #7B68EE);
   filter: blur(90px);
 }
 

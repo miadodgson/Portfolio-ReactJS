@@ -2,8 +2,11 @@ import styles from '../Navbar/Navbar.module.css'
 import React, { useState, useRef } from 'react'
 import NavIcon from '../../Assets/Images/NavIcon.png'
 import {Link} from "react-router-dom"
-import plant from '../../Assets/Images/Plant.png'
-import Dropdown from '../../Components/Dropdown/Dropdown.js'
+import HomeIcon from './NavImages/HomeIcon.png'
+import EducationIcon from './NavImages/EducationIcon.png'
+import ExperienceIcon from './NavImages/ExperienceIcon.png'
+import PublicationsIcon from './NavImages/PublicationsIcon.png'
+import ContactIcon from './NavImages/ContactIcon.png'
 
 
 function Nav() {
@@ -58,27 +61,27 @@ function DropdownMenu() {
     <div className={styles.dropdown} ref={dropdownRef}>
         <div className={styles.menu}>
 			<DropdownItem 
-				leftIcon='🏠'
+				leftIcon={<img src= {HomeIcon} className={styles.menuItem}alt="Home" height={40}/>}
 				route='/'
 				routeName='Home'/>
 
 			<DropdownItem 
-				leftIcon='🎓'
+				leftIcon={<img src= {EducationIcon} className={styles.menuItem}alt="Education" height={40}/>}
 				route='/Education'
 				routeName='Education'/>
 
 			<DropdownItem 
-				leftIcon='📚'
+				leftIcon={<img src= {ExperienceIcon} className={styles.menuItem}alt="Experience" height={40}/>}
 				route='/Experience'
 				routeName='Experience'/>
 
 			<DropdownItem 
-				leftIcon='📊'
+				leftIcon={<img src= {PublicationsIcon} className={styles.menuItem}alt="Publications" height={40}/>}
 				route='/Publications'
 				routeName='Publications'/>
 
 			<DropdownItem 
-				leftIcon='✉️'
+				leftIcon={<img src= {ContactIcon} className={styles.menuItem}alt="Contact" height={40}/>}
 				route='/Contact'
 				routeName='Contact'/>
 				
