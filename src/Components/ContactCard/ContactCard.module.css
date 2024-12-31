@@ -20,7 +20,9 @@
   top: 0;
   margin-left: -50%;
   margin-top: -70%;
-  background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+  background: linear-gradient(744deg, #9999ff,
+							  #cc99ff,60%,#e699ff
+							 );
 }
 
 .icon {
