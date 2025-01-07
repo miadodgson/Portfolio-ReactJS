@@ -38,7 +38,7 @@ function NavItem(props) {
         className={`${styles.navButton}`}
         onClick={() => setOpen(!open)}
         style={{
-          transform: open ? 'rotate(-180deg)' : 'rotate(90deg)',
+          transform: open ? 'rotate(180deg)' : 'rotate(90deg)',
           transition: 'transform 0.3s ease-in-out',
         }}
       >
