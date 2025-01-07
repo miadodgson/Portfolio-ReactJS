@@ -5,6 +5,7 @@ import LandingPage from '../../Routes/LandingPage/LandingPage.js'
 import Education from '../../Routes/Education/Education.js'
 import Experience from '../../Routes/Experience/Experience.js'
 import Publications from '../../Routes/Publications/Publications.js'
+import Resources from '../../Routes/Resources/Resources.js'
 
 
 const Body = () => {
@@ -15,6 +16,7 @@ const Body = () => {
 				<Route path='/Education' element={<Education />}/>
 				<Route path='/Experience' element={<Experience />}/>
 				<Route path='/Publications' element={<Publications />}/>
+				<Route path='/Resources' element={<Resources />}/>
                 <Route path='/Contact' element={<Contact />}/>
             </Routes>
         </div>

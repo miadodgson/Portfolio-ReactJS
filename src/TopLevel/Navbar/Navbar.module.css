@@ -45,18 +45,21 @@ a {
 }
 
 .navButton {
-  --button-size: calc(var(--nav-size) * 0.5);
+  --button-size: calc(var(--nav-size) * 0.65);
   width: var(--button-size);
   height: var(--button-size);
   padding: 5px;
   margin: 2px;
+	margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: filter 300ms;
-	height: var(--nav-size);
-	width: 50px;
-	margin-right:10px;
+}
+
+.rotate {
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(90deg);
 }
 
 .iconButton {
@@ -76,13 +79,6 @@ a {
 .iconButton:hover {
   filter: brightness(1.2);
 }
-
-.iconButton svg { 
-  fill: var(--text-color);
-  width: 20px;
-  height: 20px;
-}
-
 
 .dropdown {
   position: absolute;
@@ -108,7 +104,10 @@ a {
   border-radius: var(--border-radius);
   transition: background var(--speed);
   padding: 0.5rem;
-	font-size:26px;
+	font-size:22px;
+	font-family: sans-serif;
+	font-weight: 300;
+	color: white;
 }
 
 .menuItem .iconButton {
@@ -124,8 +123,5 @@ a {
   background-color: #0935b8;
 }
 
-.iconRight {
-  margin-left: auto;
-}
 
 
