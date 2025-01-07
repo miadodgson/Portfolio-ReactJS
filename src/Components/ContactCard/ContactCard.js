@@ -12,10 +12,10 @@ const ContactCard = () => {
       <div className={styles.wave}></div>
 
       <div className={styles.infoTop}>
-	<img src={MyImage} className={styles.icon} alt="My Image"/>
-        <br />
-        Maria Dodgson
-        <br />
+			<img src={MyImage} className={styles.icon} alt="My Image"/>
+			<p className={styles.name}>
+	        Maria Dodgson
+			</p>
         <div className={styles.container}>
 				<Socials/></div>
       </div>

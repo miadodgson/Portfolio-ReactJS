@@ -8,7 +8,7 @@ const Experience = () => {
 
 return (
 	<div>
-		<h1 className={styles.h1}> Experience </h1>
+		<h1 className={styles.h1}> Research </h1>
 		<GradientLine/>
 		<br/>
 		<SkillCard />

@@ -71,9 +71,9 @@ function DropdownMenu() {
 				routeName='Education'/>
 
 			<DropdownItem 
-				leftIcon={<img src= {ExperienceIcon} className={styles.menuItem}alt="Experience" height={40}/>}
+				leftIcon={<img src= {ExperienceIcon} className={styles.menuItem}alt="Research" height={40}/>}
 				route='/Experience'
-				routeName='Experience'/>
+				routeName='Research'/>
 
 			<DropdownItem 
 				leftIcon={<img src= {PublicationsIcon} className={styles.menuItem}alt="Publications" height={40}/>}
