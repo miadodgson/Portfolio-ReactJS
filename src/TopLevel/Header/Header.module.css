@@ -17,8 +17,27 @@
 .loader {
   display: inline-block; 
   position: relative;
-  margin-top: 8px;
+  margin-top: 60px;
 	margin-left: 10px;
 	height: 40px;
 	
 }
+
+.logo {
+	height: 200px;
+	display:flex;
+	position:fixed;
+	padding: 0px;
+	margin: 0;
+	flex-direction: column;
+	z-index:1; 
+	top: 5px;
+	left: 65px;
+}
+
+.logo2 { 
+	height: 300px;
+	position: fixed;
+	display: flex;
+	top: 5px;
+	}
