@@ -2,6 +2,12 @@ import styles from '../Navbar/Navbar.module.css';
 import React, { useState, useRef } from 'react';
 import NavIcon from '../../Assets/Images/NavIcon.png';
 import { Link, useNavigate } from 'react-router-dom';
+import HomeIcon from './NavImages/HomeIcon.png';
+import EducationIcon from './NavImages/EducationIcon.png';
+import ExperienceIcon from './NavImages/ExperienceIcon.png';
+import PublicationsIcon from './NavImages/PublicationsIcon.png';
+import ResourcesIcon from './NavImages/ResourcesIcon.png';
+import ContactIcon from './NavImages/ContactIcon.png';
 
 function Nav() {
   return (
@@ -32,7 +38,7 @@ function NavItem(props) {
         className={`${styles.navButton}`}
         onClick={() => setOpen(!open)}
         style={{
-          transform: open ? 'rotate(90deg)' : 'rotate(0deg)', 
+          transform: open ? 'rotate(180deg)' : 'rotate(90deg)',
           transition: 'transform 0.3s ease-in-out',
         }}
       >
@@ -48,8 +54,8 @@ function DropdownMenu({ closeMenu }) {
   const navigate = useNavigate();
 
   function handleNavigation(route) {
-    closeMenu();
-    navigate(route); 
+    closeMenu(); // Close the menu
+    navigate(route); // Navigate to the route
   }
 
   function DropdownItem({ leftIcon, route, routeName }) {
@@ -68,18 +74,57 @@ function DropdownMenu({ closeMenu }) {
     <div className={styles.dropdown} ref={dropdownRef}>
       <div className={styles.menu}>
         <DropdownItem
+          leftIcon={<img src={HomeIcon} height={35} width={35} alt="Home" />}
           route="/"
           routeName="Home"
         />
         <DropdownItem
-          route="/Shop"
-          routeName="Shop"
+          leftIcon={
+            <img
+              src={EducationIcon}
+              alt="Education"
+              height={35}
+              width={35}
+            />
+          }
+          route="/Education"
+          routeName="Education"
         />
         <DropdownItem
-          route="/Gallery"
-          routeName="Gallery"
+          leftIcon={
+            <img
+              src={ExperienceIcon}
+              alt="Research"
+              height={40}
+              width={40}
+            />
+          }
+          route="/Experience"
+          routeName="Research"
         />
         <DropdownItem
+          leftIcon={
+            <img
+              src={PublicationsIcon}
+              alt="Publications"
+              height={40}
+              width={40}
+            />
+          }
+          route="/Publications"
+          routeName="Publications"
+        />
+        <DropdownItem
+          leftIcon={
+            <img src={ResourcesIcon} alt="Resources" height={30} width={30} />
+          }
+          route="/Resources"
+          routeName="Resources"
+        />
+        <DropdownItem
+          leftIcon={
+            <img src={ContactIcon} alt="Contact" height={35} width={35} />
+          }
           route="/Contact"
           routeName="Contact"
         />

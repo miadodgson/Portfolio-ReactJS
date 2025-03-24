@@ -1,13 +1,15 @@
 import React from 'react'
+import LeftContent from '../../Routes/LandingPage/LeftContent.js'
+import RightContent from '../../Routes/LandingPage/RightContent.js'
 import styles from './LandingPage.module.css'
-import Painting from '../../Assets/Images/Painting.png'
 
 
 const LandingPage = () => {
 
   return (
 	  <div className={styles.contentContainer}>
-			<img src={Painting} className={styles.painting} alt='Painting'/>
+		  <LeftContent />
+		  <RightContent />
     </div>
   )
 }
