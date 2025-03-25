@@ -15,10 +15,9 @@
 }
 
 .loader {
-  display: inline-block; 
-  position: relative;
-  margin-top: 8px;
+  	display: inline-block; 
+  	position: relative;
+ 	margin-top: 8px;
 	margin-left: 10px;
 	height: 40px;
-	
 }
