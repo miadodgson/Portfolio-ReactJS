@@ -5,6 +5,8 @@
 	max-width:100%;
 	max-height:100%;
 	height: calc(100% - var(--bg));
+	border: blue 1px solid;
+	margin:0px;
 }
 
 .header {
@@ -45,6 +47,6 @@ hr {
 	font-size: 18px;
 	position:relative;
 	margin:0px;
-	}
+}
 
 

@@ -23,8 +23,7 @@ body {
   margin-top: var(--bg);
   flex: 1; 
   justify-content: center;
-
-  
+  border: pink 1px solid;
 }
 
 html, body {

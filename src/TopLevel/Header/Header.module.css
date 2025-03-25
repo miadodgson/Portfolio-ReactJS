@@ -10,7 +10,7 @@
 	height: var(--Header-size, 80px);
 	justify-content: space-between;
 	box-sizing: border-box;
-	/* border: palevioletred 1px solid; */
+	border: palevioletred 1px solid; 
 	display: flex;
 }
 
